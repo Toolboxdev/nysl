@@ -1,0 +1,167 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	
+	background: url(../images/bg.jpg);
+	font-family: sans-serif;
+}
+.contenedor-nav{
+	display: flex;
+	background: #085f0b87;
+	color: white;
+	height: 70px;
+	font-family: sans-serif;
+	flex-wrap:wrap;
+	flex-direction: column;
+	align-items: center;
+}
+.contenedor-nav.titulo-header{
+	width: 40%;
+	background: #43a047;
+	padding: 16px 40px;
+	text-align: left;
+	margin-top: 15px;
+	position: absolute;
+}
+.contenedor-nav.navbar{
+	width: 70%;
+	position: absolute;
+	top: 2%;
+	left: 30%;	
+	width: 70%;
+}
+.navbar img{
+	position: absolute;
+	left: 92%;
+	top: 30px;
+}
+.navbar ul{
+	display: flex;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.navbar ul li{
+	padding: 10px 10px;
+	color: #ccc;
+	font-size: 20px;
+	list-style-type: none;
+	text-decoration: none;
+	display: inline-block;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color:#fff;
+}
+.navbar ul li:hover{
+
+	font-weight: bold;
+}
+.separador{
+	padding: 10px;
+	background:#085f27b5;
+	width: auto;
+}
+.titulo-header h1{
+	text-shadow: 2px 2px 6px #000000;
+}
+.contenedorflex{
+	background-color:#ffe2cd;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	display:flex;
+	flex-flow: row;
+	min-height: 100vh;
+	min-width: 100vh;
+}
+.aside{
+	align-content: center;
+	margin-left: 200px;
+	
+}
+.aside h3{
+	color:#171b18;
+	margin-left: 55px;
+	padding-top: 60px;
+}
+.aside img{
+	border-radius: 8px;
+	width:320px;
+	height: 350px;
+}
+.main{
+	align-items:center;
+	margin-left: 80px;
+	padding: 100px;
+}
+.main,p{
+	padding-left: 10px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+.main a:hover {
+	color: red;
+}
+
+table {
+	border-collapse: collapse;
+	width:100%;
+}
+.mes-sep th{
+	text-align: left;
+	text-decoration-line: underline;
+}
+.mes-sep th,td {
+	padding: 10px 15px;
+}
+.mes-sep td{
+	text-align:left;
+}
+.october-month th{
+	text-decoration-line: underline;
+}
+.october-month th,td{
+	padding: 10px 15px;
+	text-align: left;
+}
+.locations th{
+	text-decoration-line: underline;
+}
+.locations th,td{
+	text-align: left;
+	padding: 10px 15px;
+}
+.info-game{
+	display: flex;
+	justify-content: space-between;
+}
+
+/*style for responsive menu*/
+
+@media screen and (max-width:1000px){
+	.contenedor-nav{
+		height: auto;
+	}
+	.contenedor-nav .titulo-header{
+		text-align: left;
+		width: 100%;
+	}
+
+	.contenedor-nav .navbar{
+		width: 100%;
+	}
+	.contenedor-nav .navbar ul{
+		justify-content: space-around;
+	}
+
+	.contenedor-nav .navbar ul li{
+		width: 20%;
+		padding: 10px 0px;
+		text-align: center;
+		font-size: 16px;
+	}
+}
+
